@@ -1,0 +1,251 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #181818;
+    color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(135deg, #0d5c6e, #083d4b); /* Teal to Dark Green Gradient */
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px; /* Space between heading and button */
+    background-color: #4caf50; /* Button color changed to green */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Bold text */
+    transition: background-color 0.3s, transform 0.3s; /* Animation for hover effect */
+}
+
+/* Optional: Hover effect for buttons */
+.btn:hover {
+    background-color: #45a049; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Sections */
+.about, .projects, .resume, .certifications, .skills, .contact {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Avatar */
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Projects Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Certifications & Internships */
+.certifications-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification, .internship {
+    background-color: #3c3c3c;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.certification-link, .internship-link {
+    color: #4caf50; /* Greenish color for links */
+    text-decoration: none;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+    color: #4caf50; /* Greenish color for the heading */
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between skills */
+}
+
+.skill {
+    border: 1px solid #4caf50; /* Greenish border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px; /* Fixed width for consistency */
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s; /* Animation effects */
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #f1f1f1; /* Light background on hover */
+}
+
+.skill i {
+    font-size: 40px; /* Icon size */
+    color: #4caf50; /* Greenish color for icons */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.skill p {
+    color: #333; /* Darker text color for skill names */
+    font-weight: 600; /* Bold text for skill names */
+}
+
+/* Profiles Section */
+.profiles {
+    padding: 50px;
+    text-align: center;
+}
+
+.profiles h2 {
+    margin-bottom: 20px;
+    color: #4caf50; /* Greenish color for the heading */
+}
+
+.profiles-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between profile links */
+}
+
+.profile {
+    border: 1px solid #4caf50; /* Greenish border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px; /* Fixed width for consistency */
+    transition: transform 0.3s ease, background-color 0.3s; /* Animation effects */
+}
+
+.profile:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #f1f1f1; /* Light background on hover */
+}
+
+.profile a {
+    text-decoration: none; /* Remove underline */
+    color: #4caf50; /* Greenish color for text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile i {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.profile p {
+    color: #333; /* Darker text color for profile names */
+    font-weight: 600; /* Bold text for profile names */
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.contact button {
+    background-color: #4caf50; /* Greenish color for contact button */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
